@@ -1,0 +1,44 @@
+.tags {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  color: $color-black;
+  font-weight: 400;
+  font-style: 14px;
+  font-weight: 18px;
+
+  &__item {
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &__item--disable {
+    background-color: $color-white-smoke;
+
+    .tags__arrow-left {
+      color: $color-dark-gray;
+    }
+  }
+
+  &__item--arrow {
+    background-color: $color-solitude-2;
+  }
+
+  &__item--active {
+    background-color: $color-black-russian;
+
+    .tags__link {
+      color: $color-white;
+    }
+  }
+}

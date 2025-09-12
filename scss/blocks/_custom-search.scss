@@ -2,12 +2,49 @@
   position: relative;
 
   &__field {
-    padding: 17px 16px;
+    padding: 16px 38px 16px 16px;
     border: 1px solid $color-periwinkle;
     border-radius: 8px;
     width: 100%;
     color: $color-black;
     font-size: 14px;
     line-height: 18px;
+    outline: none; // убираем черную рамку по умолчанию
+
+    &:hover {
+      border: 1px solid $color-manatee;
+    }
+
+    &:focus {
+      border: 1px solid $color-royal-blue-1;
+    }
+    
+    &::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+      width: 24px;
+      height: 24px;
+      right: 52px;
+      transform: translateX(-50%);
+      top: 50%;
+      background: url('/images/sprite/icon-close.svg');
+    }
   }
+
+  &__icon-close,
+  &__icon-search {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $color-mischka;
+  }
+
+  &__icon-close {
+    display: none;
+    right: 52px;
+  }
+
+  &__icon-search {
+    right: 16px;
+  }
+
 }
