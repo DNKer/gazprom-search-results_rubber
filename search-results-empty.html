@@ -54,56 +54,57 @@
             </svg>
           </button>
         </div>
-      </div>
-    </header>
-    <main>
-      <div class="breadcrumbs">
-        <div class="container">
+        <div class="breadcrumbs">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Главная</a>
+              <a class="breadcrumbs__link" href="search-results.html">Главная</a>
             </li>
             <li class="breadcrumbs__item">
               <span class="breadcrumbs__link breadcrumbs__link--active">Результаты поиска</span>
             </li>
           </ul>
         </div>
+
+
+        <h1 class="header__search-title">Результаты поиска</h1>
+        <div class="header___wrapper">
+          <form class="header___search-form" action="#" method="GET">
+            <div class="custom-search custom-search--empty">
+              <input type="search" class="custom-search__field" aria-label="Поле поиска" name="search-field"
+                placeholder="" autocomplete="off">
+              <svg class="custom-search__icon-close" width="24" height="24" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-close"></use>
+              </svg>
+              <svg class="custom-search__icon-search" width="24" height="24" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-search"></use>
+              </svg>
+            </div>
+          </form>
+          <!-- search__button -->
+        </div>
+
+        <ul class="header__pattern-list">
+          <li class="header__pattern-list-item">
+            <a class="header__pattern-list-link" href="#">Что входит в&nbsp;Привилегии?</a>
+          </li>
+          <li class="header__pattern-list-item">
+            <a class="header__pattern-list-link" href="#">Курсы валют</a>
+          </li>
+          <li class="header__pattern-list-item">
+            <a class="header__pattern-list-link" href="#">Где скачать приложение?</a>
+          </li>
+          <li class="header__pattern-list-item">
+            <a class="header__pattern-list-link" href="#">Рефинансирование</a>
+          </li>
+        </ul>
       </div>
+    </header>
+    <main>
+
 
       <section class="search">
         <div class="container">
-          <h1 class="search__title">Результаты поиска</h1>
 
-          <div class="search__wrapper">
-            <form class="search__search-form" action="#" method="GET">
-              <div class="custom-search">
-                <input type="search" class="custom-search__field" aria-label="Поле поиска" name="search-field"
-                  placeholder="" autocomplete="off">
-                <svg class="custom-search__icon-close" width="24" height="24" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-close"></use>
-                </svg>
-                <svg class="custom-search__icon-search" width="24" height="24" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-search"></use>
-                </svg>
-              </div>
-            </form>
-            <!-- search__button -->
-          </div>
-
-          <ul class="search__pattern-list">
-            <li class="search__pattern-list-item">
-              <a class="search__pattern-list-link" href="#">Что входит в&nbsp;Привилегии?</a>
-            </li>
-            <li class="search__pattern-list-item">
-              <a class="search__pattern-list-link" href="#">Курсы валют</a>
-            </li>
-            <li class="search__pattern-list-item">
-              <a class="search__pattern-list-link" href="#">Где скачать приложение?</a>
-            </li>
-            <li class="search__pattern-list-item">
-              <a class="search__pattern-list-link" href="#">Рефинансирование</a>
-            </li>
-          </ul>
           <div class="search__wrapper">
             <picture>
               <source media="(max-width: 360px)" srcset="images/pictures/loupe-mobile.png 1x, 
@@ -119,21 +120,39 @@
               <span class="search__description">Попробуйте изменить запрос</span>
             </div>
           </div>
-          <div class="cookie">
-            <p class="cookie__text">Мы&nbsp;обрабатываем файлы cookie, чтобы улучшить работу сайта.
-              Оставаясь на&nbsp;нашем сайте, вы&nbsp;соглашаетесь с&nbsp;<a class="cookie__link" href="#">Политикой
-                пользовательских
-                данных.</a> Если вы&nbsp;хотите запретить обработку файлов cookie, отключите cookie в&nbsp;
-              настройках вашего браузера</p>
-            <button class="cookie__button" aria-label="Закрыть плашку cookie" type="button">
-              <svg width="20" height="20" aria-hidden="true">
-                <use xlink:href="images/sprite.svg#icon-close"></use>
-              </svg>
-            </button>
-          </div>
         </div>
       </section>
-
+      <div class="caption">
+        <div class="container">
+          <div class="caption__description">
+            <span class="caption__text">Поисковая технология</span>
+            <a class="caption__link" href="#" aria-label="Ссылка на поис Яндекс">
+              <svg class="caption__yandex" width="66" height="20">
+                <use xlink:href="images/sprite.svg#icon-yandex"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="banner banner--active">
+        <button class="banner__button" aria-label="Оценить" type="button">
+          <svg width="24" height="24" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-finger_up"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="cookie cookie--active">
+        <p class="cookie__text">Мы&nbsp;обрабатываем файлы cookie, чтобы улучшить работу сайта.
+          Оставаясь на&nbsp;нашем сайте, вы&nbsp;соглашаетесь с&nbsp;<a class="cookie__link" href="#">Политикой
+            пользовательских
+            данных.</a> Если вы&nbsp;хотите запретить обработку файлов cookie, отключите cookie в&nbsp;
+          настройках вашего браузера</p>
+        <button class="cookie__button" aria-label="Закрыть плашку cookie" type="button">
+          <svg width="20" height="20" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div> -->
     </main>
     <footer class="footer">
       <div class="container">

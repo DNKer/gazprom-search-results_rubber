@@ -1,67 +1,67 @@
 .search {
   margin: 0;
-  padding: 40px 0;
+  padding: 360px 0 0;
 
-  @include vp-768 {
-    padding: 40px 0 80px 0;
-  }
+  // @include vp-768 {
+  //   padding: 40px 0 80px 0;
+  // }
 
-  @include vp-1024 {
-    padding: 40px 0 100px 0;
-  }
+  // @include vp-1024 {
+  //   padding: 40px 0 100px 0;
+  // }
 
-  &__title {
-    margin: 0 0 28px 0;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 32px;
-    position: relative;
+  // &__title {
+  //   margin: 0 0 28px 0;
+  //   font-weight: 700;
+  //   font-size: 28px;
+  //   line-height: 32px;
+  //   position: relative;
 
-    &::after {
-      content: "";
-      width: 100vw;
-      position: absolute;
-      height: 1px;
-      background-color: $color-hawkes-blue;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: -25px;
-    }
-  }
+  //   &::after {
+  //     content: "";
+  //     width: 100vw;
+  //     position: absolute;
+  //     height: 1px;
+  //     background-color: $color-hawkes-blue;
+  //     left: 50%;
+  //     transform: translateX(-50%);
+  //     bottom: -25px;
+  //   }
+  // }
 
-  &__wrapper {
-    display: flex;
-    flex-direction: row;
-  }
+  // &__wrapper {
+  //   display: flex;
+  //   flex-direction: row;
+  // }
 
-  &__search-form {
-    width: 100%;
-    margin: 0 0 20px 0;
-    padding: 25px 0 0 0;
-  }
+  // &__search-form {
+  //   width: 100%;
+  //   margin: 0 0 20px 0;
+  //   padding: 25px 0 0 0;
+  // }
 
-  &__pattern-list {
-    list-style-type: none;
-    margin: 0 0 60px;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
+  // &__pattern-list {
+  //   list-style-type: none;
+  //   margin: 0 0 60px;
+  //   padding: 0;
+  //   display: flex;
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  //   gap: 8px;
+  // }
 
-  &__pattern-list-item {
-    padding: 12px;
-    font-size: 12px;
-    line-height: 14px;
-    border-radius: 8px;
-    color: $color-black-russian;
-    background-color: $color-lavander;
-  }
+  // &__pattern-list-item {
+  //   padding: 12px;
+  //   font-size: 12px;
+  //   line-height: 14px;
+  //   border-radius: 8px;
+  //   color: $color-black-russian;
+  //   background-color: $color-lavander;
+  // }
 
-  &__pattern-list-link {
-    white-space: nowrap;
-  }
+  // &__pattern-list-link {
+  //   white-space: nowrap;
+  // }
 
   &__wrapper {
     display: flex;
@@ -84,6 +84,7 @@
   }
 
   &__description {
+    margin: 0 0 60px;
     font-size: 14px;
     line-height: 18px;
   }

@@ -4,15 +4,20 @@
   border: 1px solid $color-hawkes-blue;
   border-radius: 12px;
   box-shadow: 0px 6px 20px 0px rgba(50, 54, 65, 0.2);
-  // padding: 12px 58px 12px 12px;
-  display: flex;
-  align-items: center;
-  padding: 12px 16px 12px 12px;
-  gap: 16px;
-  position: fixed;
-  bottom: 100px;
   background-color: $color-white;
   z-index: 10;
+  align-items: center;
+  padding: 12px 16px 12px 12px;
+  display: none;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 150px;
+
+  &--active {
+    display: flex;
+    gap: 16px;
+  }
 
   &__text {
     position: relative;
@@ -40,6 +45,15 @@
       color: #A3A7BC;
       width: 48px;
       min-width: 48px;
+
+      &:focus,
+      &:hover {
+        color: $color-royal-blue-1;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 

@@ -1,5 +1,10 @@
 .custom-search {
   position: relative;
+  margin: 0 0 60px 0;
+
+  &--empty {
+    margin: 0 0 20px 0;
+  }
 
   &__field {
     padding: 16px 38px 16px 16px;
@@ -18,7 +23,7 @@
     &:focus {
       border: 1px solid $color-royal-blue-1;
     }
-    
+
     &::-webkit-search-cancel-button {
       -webkit-appearance: none;
       width: 24px;
@@ -36,6 +41,12 @@
     top: 50%;
     transform: translateY(-50%);
     color: $color-mischka;
+
+    &:focus,
+    &:hover {
+      color: $color-royal-blue-1;
+      cursor: pointer;
+    }
   }
 
   &__icon-close {
@@ -46,5 +57,7 @@
   &__icon-search {
     right: 16px;
   }
+
+  
 
 }

@@ -1,4 +1,24 @@
 .result {
   margin: 0;
   padding: 0 0 40px;
+
+  &__search-title {
+    padding: 56px 0 0;
+    margin: 0 0 56px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100vw;
+      position: absolute;
+      height: 1px;
+      background-color: $color-hawkes-blue;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -28px;
+    }
+  }
 }
