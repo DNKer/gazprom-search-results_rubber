@@ -16,6 +16,10 @@
     line-height: 18px;
     outline: none; // убираем черную рамку по умолчанию
 
+    @include vp-768 {
+      padding: 19px 45px 19px 22px;
+    }
+
     &:hover {
       border: 1px solid $color-manatee;
     }
@@ -56,8 +60,12 @@
 
   &__icon-search {
     right: 16px;
+
+    @include vp-768 {
+      right: 20px;
+    }
   }
 
-  
+
 
 }

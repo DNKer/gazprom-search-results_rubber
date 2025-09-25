@@ -8,8 +8,17 @@
   grid-template-rows: repeat(auto-fill, minmax(146px, min-content));
   gap: 40px;
 
+  @include vp-768 {
+    grid-template-rows: repeat(auto-fill, minmax(68px, min-content));
+  }
+
   &__item:last-child {
     margin: 0 0 62px;
+
+    @include vp-768 {
+      margin: 0 0 40px;
+    }
+
   }
 
   &__heading {

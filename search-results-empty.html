@@ -54,49 +54,6 @@
             </svg>
           </button>
         </div>
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="search-results.html">Главная</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <span class="breadcrumbs__link breadcrumbs__link--active">Результаты поиска</span>
-            </li>
-          </ul>
-        </div>
-
-
-        <h1 class="header__search-title">Результаты поиска</h1>
-        <div class="header___wrapper">
-          <form class="header___search-form" action="#" method="GET">
-            <div class="custom-search custom-search--empty">
-              <input type="search" class="custom-search__field" aria-label="Поле поиска" name="search-field"
-                placeholder="" autocomplete="off">
-              <svg class="custom-search__icon-close" width="24" height="24" aria-hidden="true">
-                <use xlink:href="images/sprite.svg#icon-close"></use>
-              </svg>
-              <svg class="custom-search__icon-search" width="24" height="24" aria-hidden="true">
-                <use xlink:href="images/sprite.svg#icon-search"></use>
-              </svg>
-            </div>
-          </form>
-          <!-- search__button -->
-        </div>
-
-        <ul class="header__pattern-list">
-          <li class="header__pattern-list-item">
-            <a class="header__pattern-list-link" href="#">Что входит в&nbsp;Привилегии?</a>
-          </li>
-          <li class="header__pattern-list-item">
-            <a class="header__pattern-list-link" href="#">Курсы валют</a>
-          </li>
-          <li class="header__pattern-list-item">
-            <a class="header__pattern-list-link" href="#">Где скачать приложение?</a>
-          </li>
-          <li class="header__pattern-list-item">
-            <a class="header__pattern-list-link" href="#">Рефинансирование</a>
-          </li>
-        </ul>
       </div>
     </header>
     <main>
@@ -104,7 +61,47 @@
 
       <section class="search">
         <div class="container">
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="search-results-empty.html">Главная</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <span class="breadcrumbs__link breadcrumbs__link--active">Результаты поиска</span>
+              </li>
+            </ul>
+          </div>
+          <h1 class="search__search-title">Результаты поиска</h1>
+          <div class="search___wrapper">
+            <form class="search___search-form" action="#" method="GET">
+              <div class="custom-search custom-search--empty">
+                <input type="search" class="custom-search__field" aria-label="Поле поиска" name="search-field"
+                  placeholder="" autocomplete="off">
+                <svg class="custom-search__icon-close" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-close"></use>
+                </svg>
+                <svg class="custom-search__icon-search" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-search"></use>
+                </svg>
+              </div>
+            </form>
+            <!-- search__button -->
+          </div>
 
+          <ul class="search__pattern-list">
+            <li class="search__pattern-list-item">
+              <a class="search__pattern-list-link" href="#">Что входит в&nbsp;Привилегии?</a>
+            </li>
+            <li class="search__pattern-list-item">
+              <a class="search__pattern-list-link" href="#">Курсы валют</a>
+            </li>
+            <li class="search__pattern-list-item">
+              <a class="search__pattern-list-link" href="#">Где скачать приложение?</a>
+            </li>
+            <li class="search__pattern-list-item">
+              <a class="search__pattern-list-link" href="#">Рефинансирование</a>
+            </li>
+          </ul>
           <div class="search__wrapper">
             <picture>
               <source media="(max-width: 360px)" srcset="images/pictures/loupe-mobile.png 1x, 

@@ -3,12 +3,16 @@
   padding: 0 0 40px;
 
   &__search-title {
-    padding: 56px 0 0;
-    margin: 0 0 56px;
+    padding: 0;
+    margin: 0 0 54px;
     font-weight: 700;
     font-size: 28px;
     line-height: 32px;
     position: relative;
+
+    @include vp-768 {
+      margin: 0 0 64px;
+    }
 
     &::after {
       content: "";
@@ -18,7 +22,12 @@
       background-color: $color-hawkes-blue;
       left: 50%;
       transform: translateX(-50%);
-      bottom: -28px;
+      bottom: -25px;
+
+      @include vp-768 {
+        bottom: -32px;
+      }
     }
+
   }
 }
