@@ -4,6 +4,10 @@
 
   &--empty {
     margin: 0 0 20px 0;
+
+    @include vp-768 {
+      margin: 0 0 18px 0;
+    }
   }
 
   &__field {
@@ -17,7 +21,7 @@
     outline: none; // убираем черную рамку по умолчанию
 
     @include vp-768 {
-      padding: 19px 45px 19px 22px;
+      padding: 17px 45px 17px 22px;
     }
 
     &:hover {

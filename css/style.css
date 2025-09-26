@@ -594,7 +594,7 @@ h3 {
 }
 
 .footer {
-  padding: 40px 0;
+  padding: 37px 0;
   background-color: #F4F6FA;
 }
 @media (min-width: 1024px) {
@@ -1022,6 +1022,11 @@ h3 {
   display: flex;
   align-items: center;
 }
+@media (min-width: 768px) {
+  .search__wrapper {
+    margin: 0 0 80px;
+  }
+}
 .search__search-title {
   font-weight: 700;
   font-size: 28px;
@@ -1032,6 +1037,8 @@ h3 {
 @media (min-width: 768px) {
   .search__search-title {
     margin: 0 0 64px;
+    font-size: 32px;
+    line-height: 36px;
   }
 }
 .search__search-title::after {
@@ -1062,6 +1069,11 @@ h3 {
   flex-wrap: wrap;
   gap: 8px;
 }
+@media (min-width: 768px) {
+  .search__pattern-list {
+    margin: 0 0 80px;
+  }
+}
 .search__pattern-list-item {
   padding: 12px 14px;
   font-size: 12px;
@@ -1073,6 +1085,12 @@ h3 {
 .search__pattern-list-link {
   white-space: nowrap;
 }
+@media (min-width: 768px) {
+  .search__pattern-list-link {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
 .search__wrapper {
   display: flex;
   gap: 20px;
@@ -1080,25 +1098,53 @@ h3 {
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 768px) {
+  .search__wrapper {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
 .search__inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
 }
+@media (min-width: 768px) {
+  .search__inner {
+    align-items: flex-start;
+  }
+}
 .search__caption {
   font-size: 20px;
   line-height: 24px;
+}
+@media (min-width: 768px) {
+  .search__caption {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 .search__description {
   margin: 0 0 60px;
   font-size: 14px;
   line-height: 18px;
 }
+@media (min-width: 768px) {
+  .search__description {
+    margin: 0;
+  }
+}
 @media (min-width: 360px) {
   .search__image {
     width: 140px;
     height: 140px;
+  }
+}
+@media (min-width: 768px) {
+  .search__image {
+    width: 180px;
+    height: 180px;
   }
 }
 
@@ -1108,6 +1154,11 @@ h3 {
 }
 .custom-search--empty {
   margin: 0 0 20px 0;
+}
+@media (min-width: 768px) {
+  .custom-search--empty {
+    margin: 0 0 18px 0;
+  }
 }
 .custom-search__field {
   padding: 16px 38px 16px 16px;
@@ -1121,7 +1172,7 @@ h3 {
 }
 @media (min-width: 768px) {
   .custom-search__field {
-    padding: 19px 45px 19px 22px;
+    padding: 17px 45px 17px 22px;
   }
 }
 .custom-search__field:hover {
