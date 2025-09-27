@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0 0 40px;
 
+  @include vp-1024 {
+    padding: 0 0 58px;
+  }
+
   &__search-title {
     padding: 0;
     margin: 0 0 54px;
@@ -11,7 +15,13 @@
     position: relative;
 
     @include vp-768 {
-      margin: 0 0 64px;
+      margin: 0 0 67px;
+    }
+
+    @include vp-1024 {
+      font-size: 40px;
+      line-height: 44px;
+      margin: 0 0 120px;
     }
 
     &::after {
@@ -27,7 +37,51 @@
       @include vp-768 {
         bottom: -32px;
       }
+
+      @include vp-1024 {
+        bottom: -40px;
+      }
+    }
+  }
+
+  &__inner {
+    @include vp-1024 {
+      padding: 0 69px;
+    }
+  }
+
+  &__search-form {
+    display: unset;
+
+    @include vp-1024 {
+      display: flex;
+      gap: 16px;
+      margin: 0 0 80px;
+    }
+  }
+
+  &__search-button {
+    display: none;
+
+    @include vp-1024 {
+      display: block;
+      padding: 19px 33px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      color: $color-white;
+      background-color: $color-royal-blue-1;
     }
 
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: $color-free-speech-blue;
+    }
+
+    &:disabled {
+      color: $color-black;
+      background-color: $color-white-smoke;
+    }
   }
 }

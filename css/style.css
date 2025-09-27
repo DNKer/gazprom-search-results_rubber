@@ -1024,7 +1024,7 @@ h3 {
 }
 @media (min-width: 768px) {
   .search__wrapper {
-    margin: 0 0 80px;
+    margin: 0 0 76px;
   }
 }
 .search__search-title {
@@ -1041,6 +1041,13 @@ h3 {
     line-height: 36px;
   }
 }
+@media (min-width: 1024px) {
+  .search__search-title {
+    margin: 0 0 120px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
 .search__search-title::after {
   content: "";
   position: absolute;
@@ -1055,10 +1062,22 @@ h3 {
     top: 64px;
   }
 }
+@media (min-width: 1024px) {
+  .search__search-title::after {
+    top: 82px;
+  }
+}
+.search__inner {
+  padding: 0 69px;
+}
 .search__search-form {
   width: 100%;
-  margin: 0 0 20px 0;
-  padding: 25px 0 0 0;
+}
+@media (min-width: 1024px) {
+  .search__search-form {
+    display: flex;
+    gap: 16px;
+  }
 }
 .search__pattern-list {
   list-style-type: none;
@@ -1082,6 +1101,11 @@ h3 {
   color: #1E222E;
   background-color: #EDEDEE;
 }
+@media (min-width: 768px) {
+  .search__pattern-list-item {
+    padding: 14px;
+  }
+}
 .search__pattern-list-link {
   white-space: nowrap;
 }
@@ -1104,14 +1128,19 @@ h3 {
     gap: 40px;
   }
 }
-.search__inner {
+@media (min-width: 1024px) {
+  .search__wrapper {
+    margin: 0 0 17px 0;
+  }
+}
+.search__caption-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
 }
 @media (min-width: 768px) {
-  .search__inner {
+  .search__caption-inner {
     align-items: flex-start;
   }
 }
@@ -1152,12 +1181,10 @@ h3 {
   position: relative;
   margin: 0 0 60px 0;
 }
-.custom-search--empty {
-  margin: 0 0 20px 0;
-}
-@media (min-width: 768px) {
-  .custom-search--empty {
-    margin: 0 0 18px 0;
+@media (min-width: 1024px) {
+  .custom-search {
+    width: 100%;
+    margin: 0;
   }
 }
 .custom-search__field {
@@ -1221,9 +1248,19 @@ h3 {
   grid-template-rows: repeat(auto-fill, minmax(146px, min-content));
   gap: 40px;
 }
+@media (min-width: 650px) {
+  .search-result {
+    grid-template-rows: repeat(auto-fill, minmax(90px, min-content));
+  }
+}
 @media (min-width: 768px) {
   .search-result {
     grid-template-rows: repeat(auto-fill, minmax(68px, min-content));
+  }
+}
+@media (min-width: 1024px) {
+  .search-result {
+    gap: 60px;
   }
 }
 .search-result__item:last-child {
@@ -1234,15 +1271,32 @@ h3 {
     margin: 0 0 40px;
   }
 }
+@media (min-width: 1024px) {
+  .search-result__item:last-child {
+    margin: 0 0 55px;
+  }
+}
 .search-result__heading {
   width: 100%;
   margin: 0 0 12px;
   font-size: 18px;
   line-height: 22px;
 }
+@media (min-width: 1024px) {
+  .search-result__heading {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
 .search-result__text {
   font-size: 14px;
   line-height: 18px;
+}
+@media (min-width: 1024px) {
+  .search-result__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 .tags {
@@ -1288,6 +1342,11 @@ h3 {
   margin: 0;
   padding: 0 0 40px;
 }
+@media (min-width: 1024px) {
+  .result {
+    padding: 0 0 58px;
+  }
+}
 .result__search-title {
   padding: 0;
   margin: 0 0 54px;
@@ -1298,7 +1357,14 @@ h3 {
 }
 @media (min-width: 768px) {
   .result__search-title {
-    margin: 0 0 64px;
+    margin: 0 0 67px;
+  }
+}
+@media (min-width: 1024px) {
+  .result__search-title {
+    font-size: 40px;
+    line-height: 44px;
+    margin: 0 0 120px;
   }
 }
 .result__search-title::after {
@@ -1316,6 +1382,48 @@ h3 {
     bottom: -32px;
   }
 }
+@media (min-width: 1024px) {
+  .result__search-title::after {
+    bottom: -40px;
+  }
+}
+@media (min-width: 1024px) {
+  .result__inner {
+    padding: 0 69px;
+  }
+}
+.result__search-form {
+  display: unset;
+}
+@media (min-width: 1024px) {
+  .result__search-form {
+    display: flex;
+    gap: 16px;
+    margin: 0 0 80px;
+  }
+}
+.result__search-button {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .result__search-button {
+    display: block;
+    padding: 19px 33px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    background-color: #476BF0;
+  }
+}
+.result__search-button:hover, .result__search-button:focus {
+  cursor: pointer;
+  background-color: #3356D7;
+}
+.result__search-button:disabled {
+  color: #000000;
+  background-color: #F3F3F3;
+}
 
 .caption {
   margin: 0 0 60px 0;
@@ -1323,6 +1431,11 @@ h3 {
 @media (min-width: 768px) {
   .caption {
     margin: 0 0 80px 0;
+  }
+}
+@media (min-width: 1024px) {
+  .caption {
+    margin: 0 0 96px 0;
   }
 }
 .caption__description {

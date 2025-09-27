@@ -72,49 +72,52 @@
             </ul>
           </div>
           <h1 class="search__search-title">Результаты поиска</h1>
-          <div class="search___wrapper">
-            <form class="search___search-form" action="#" method="GET">
-              <div class="custom-search custom-search--empty">
-                <input type="search" class="custom-search__field" aria-label="Поле поиска" name="search-field"
-                  placeholder="" autocomplete="off">
-                <svg class="custom-search__icon-close" width="24" height="24" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-close"></use>
-                </svg>
-                <svg class="custom-search__icon-search" width="24" height="24" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-search"></use>
-                </svg>
-              </div>
-            </form>
-            <!-- search__button -->
-          </div>
+          <div class="search__inner">
+            <div class="search__wrapper">
+              <form class="search__search-form" action="#" method="GET">
+                <div class="custom-search">
+                  <input type="search" class="custom-search__field" aria-label="Поле поиска" name="search-field"
+                    placeholder="" autocomplete="off">
+                  <svg class="custom-search__icon-close" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-close"></use>
+                  </svg>
+                  <svg class="custom-search__icon-search" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-search"></use>
+                  </svg>
+                </div>
+                <!-- search__button -->
+                <button class="result__search-button btn" type="submit">Найти</button>
+              </form>
+            </div>
 
-          <ul class="search__pattern-list">
-            <li class="search__pattern-list-item">
-              <a class="search__pattern-list-link" href="#">Что входит в&nbsp;Привилегии?</a>
-            </li>
-            <li class="search__pattern-list-item">
-              <a class="search__pattern-list-link" href="#">Курсы валют</a>
-            </li>
-            <li class="search__pattern-list-item">
-              <a class="search__pattern-list-link" href="#">Где скачать приложение?</a>
-            </li>
-            <li class="search__pattern-list-item">
-              <a class="search__pattern-list-link" href="#">Рефинансирование</a>
-            </li>
-          </ul>
-          <div class="search__wrapper">
-            <picture>
-              <source media="(max-width: 360px)" srcset="images/pictures/loupe-mobile.png 1x, 
+            <ul class="search__pattern-list">
+              <li class="search__pattern-list-item">
+                <a class="search__pattern-list-link" href="#">Что входит в&nbsp;Привилегии?</a>
+              </li>
+              <li class="search__pattern-list-item">
+                <a class="search__pattern-list-link" href="#">Курсы валют</a>
+              </li>
+              <li class="search__pattern-list-item">
+                <a class="search__pattern-list-link" href="#">Где скачать приложение?</a>
+              </li>
+              <li class="search__pattern-list-item">
+                <a class="search__pattern-list-link" href="#">Рефинансирование</a>
+              </li>
+            </ul>
+            <div class="search__wrapper">
+              <picture>
+                <source media="(max-width: 360px)" srcset="images/pictures/loupe-mobile.png 1x, 
                     images/pictures/loupe-mobile@2x.png 2x">
-              <source media="(max-width: 768px)" srcset="images/pictures/loupe-tablet.png 1x, 
+                <source media="(max-width: 768px)" srcset="images/pictures/loupe-tablet.png 1x, 
                     images/pictures/loupe-tablet@2x.png 2x">
-              <img class="search__image" src="images/pictures/loupe-desktop.png"
-                srcset="images/pictures/loupe-desktop@2x.png 2x" width="240" height="240"
-                alt="Картинка лупы на фоне папки">
-            </picture>
-            <div class="search__inner">
-              <h2 class="search__caption">Ничего не&nbsp;нашлось</h2>
-              <span class="search__description">Попробуйте изменить запрос</span>
+                <img class="search__image" src="images/pictures/loupe-desktop.png"
+                  srcset="images/pictures/loupe-desktop@2x.png 2x" width="240" height="240"
+                  alt="Картинка лупы на фоне папки">
+              </picture>
+              <div class="search__caption-inner">
+                <h2 class="search__caption">Ничего не&nbsp;нашлось</h2>
+                <span class="search__description">Попробуйте изменить запрос</span>
+              </div>
             </div>
           </div>
         </div>

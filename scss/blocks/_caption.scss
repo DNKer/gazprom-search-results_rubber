@@ -5,6 +5,10 @@
     margin: 0 0 80px 0;
   }
 
+  @include vp-1024 {
+    margin: 0 0 96px 0;
+  }
+
   &__description {
     display: flex;
     align-items: center;
