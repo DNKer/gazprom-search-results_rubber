@@ -45,8 +45,13 @@
   }
 
   &__inner {
+
     @include vp-1024 {
       padding: 0 69px;
+    }
+
+    @include vp-1304 {
+      padding: 0 208px;
     }
   }
 
