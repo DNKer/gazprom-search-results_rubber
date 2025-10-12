@@ -10,6 +10,10 @@
     padding: 0 0 70px 0;
   }
 
+  @include vp-1304 {
+    padding: 0 0 62px 0;
+  }
+
   &__wrapper {
     // margin: 0 0 20px;
     display: flex;
@@ -99,17 +103,6 @@
       margin: 0 0 80px;
     }
   }
-
-
-
-  &--img {
-    margin: 0 0 60px 0;
-
-    @include vp-768 {
-      margin: 0 0 76px 0;
-    }
-  }
-
 
   &__caption-inner {
     display: flex;

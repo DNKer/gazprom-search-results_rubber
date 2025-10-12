@@ -15,6 +15,12 @@
       color: $color-black-russian;
       background-color: $color-lavander;
 
+      &:hover,
+      &:focus {
+        background-color: $color-link-water;
+        cursor: pointer;
+      }
+
       @include vp-768 {
         font-size: 13px;
         line-height: 16px;

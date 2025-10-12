@@ -20,6 +20,14 @@
     gap: 60px;
   }
 
+  &__item > .search-result__heading {
+
+    &:hover,
+    &:focus  {
+      color: $color-royal-blue-1;
+    }
+  }
+
   &__item:last-child {
     margin: 0 0 62px;
 
@@ -31,11 +39,16 @@
       margin: 0 0 58px;
     }
 
+    @include vp-1304 {
+      margin: 0 0 54px;
+    }
+
   }
 
   &__heading {
-    width: 100%;
-    margin: 0 0 12px;
+    // width: 100%;
+    font-weight: 700;
+    // margin: 0 0 12px;
     font-size: 18px;
     line-height: 22px;
 
@@ -47,6 +60,7 @@
   }
 
   &__text {
+    margin: 12px 0 0;
     font-size: 14px;
     line-height: 18px;
 
