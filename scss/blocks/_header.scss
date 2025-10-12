@@ -151,24 +151,54 @@
   }
 
   &--search-open {
-    border-radius: 0 0 24px 24px;
+
+    +.full-overlay {
+      visibility: visible;
+    }
+
 
     .header__search-open {
+      margin: 0;
+      padding: 40px 0;
+      position: fixed;
+      top: 55px;
       display: flex;
       flex-direction: column;
+      background-color: $color-white;
+      border-radius: 0 0 24px 24px;
+      z-index: 300;
+      opacity: 1;
+
+      @include vp-1024 {
+        padding: 40px 0;
+        top: 70px;
+        border-radius: 0 0 40px 40px;
+      }
+    }
+
+    .header__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
 
     .breadcrumbs {
       display: none;
-      // margin: 0 0 -18px;
     }
 
-    .custom-search {
-      margin: 0;
-    }
+    // .custom-search {
+    //   margin: 0 0 20px;
+    // }
 
     .header__pattern-list .header__pattern-list-item {
-      padding: 12px 14px;
+      // padding: 12px 14px;
+      font-size: 12px;
+      line-height: 14px;
+
+      @include vp-1024 {
+        font-size: 13px;
+        line-height: 16px;
+      }
     }
   }
 }

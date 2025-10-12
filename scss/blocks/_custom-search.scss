@@ -1,30 +1,22 @@
 .custom-search {
   position: relative;
-  margin: 0 0 60px 0;
+  margin: 0 0 20px 0;
 
-  // @include vp-768 {
-  //   margin: 0 0 20px 0;
-  // }
+  @include vp-768 {
+    margin: 0 0 18px 0;
+  }
 
   @include vp-1024 {
     width: 100%;
-    margin: 0;
+    margin: 0 0 20px 0;
   }
 
   @include vp-1304 {
     min-width: 680px;
   }
 
-  &--empt {
-    margin: 0;
-
-    // @include vp-768 {
-    //   margin: 0 0 20px 0;
-    // }
-  }
-
   &__field {
-    padding: 16px 38px 16px 16px;
+    padding: 16px 76px 16px 16px;
     border: 1px solid $color-periwinkle;
     border-radius: 8px;
     width: 100%;
@@ -49,44 +41,61 @@
       border: 1px solid $color-royal-blue-1;
     }
 
-    &::-webkit-search-cancel-button {
-      -webkit-appearance: none;
-      width: 24px;
-      height: 24px;
-      right: 52px;
-      transform: translateX(-50%);
-      top: 50%;
-      background: url('/images/sprite/icon-close.svg');
-    }
+    // &::-webkit-search-cancel-button {
+    //   -webkit-appearance: none;
+    //   width: 24px;
+    //   height: 24px;
+    //   right: 52px;
+    //   transform: translateX(-50%);
+    //   top: 50%;
+    //   background: url('/images/sprite/icon-close.svg');
+    // }
   }
 
-  &__icon-close,
-  &__icon-search {
+  // &__icon-close,
+  // &__icon-search {
+  //   position: absolute;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  //   color: $color-mischka;
+
+  //   &:focus,
+  //   &:hover {
+  //     color: $color-royal-blue-1;
+  //     cursor: pointer;
+  //   }
+  // }
+
+  // &__icon-close {
+  //   display: none;
+  //   right: 52px;
+  // }
+
+  &__open,
+  &__close {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 14px;
     color: $color-mischka;
 
-    &:focus,
-    &:hover {
-      color: $color-royal-blue-1;
-      cursor: pointer;
-    }
+    // @include vp-768 {
+    //   right: 20px;
+    // }
   }
 
-  &__icon-close {
-    display: none;
-    right: 52px;
-  }
-
-  &__icon-search {
+  &__open {
     right: 16px;
 
     @include vp-768 {
-      right: 20px;
+      right: 22px;
     }
   }
 
+  &__close {
+    right: 52px;
 
+    @include vp-768 {
+      right: 62px;
+    }
+  }
 
 }

@@ -1,0 +1,8 @@
+.form {
+  width: 100%;
+
+  @include vp-1024 {
+    display: flex;
+    gap: 16px;
+  }
+}

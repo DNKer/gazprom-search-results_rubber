@@ -10,7 +10,10 @@
   </head>
 
   <body>
-    <header class="header">
+
+    <div class="full-overlay"></div>
+
+    <header class="header"> <!-- for open search field to add modificator header--search-open -->
       <div class="container">
         <div class="header__wrapper">
           <svg class="header__icon-decor" width="24" height="24" aria-hidden="true">
@@ -55,11 +58,53 @@
           </button>
         </div>
       </div>
+
+      <!-- To show search field, when we clicked on the magnifying glass -->
+      <div class="header__search-open block">
+        <div class="container">
+          <div class="header__inner">
+            <form class="header__search-form form" action="#" method="GET">
+              <div class="custom-search">
+                <input type="search" class="custom-search__field" aria-label="Поле поиска" name="search-field"
+                  placeholder="" autocomplete="off">
+                <button class="custom-search__open btn-icon" type="button" aria-label="Открыть поиск">
+                  <svg class="btn-icon__icon" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+                <button class="custom-search__close btn-icon" type="button" aria-label="Очистить">
+                  <svg class="btn-icon__icon" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+              <!-- search__button -->
+              <button class="search-button btn" type="submit">Найти</button>
+            </form>
+            <ul class="header__pattern-list pattern-list">
+              <li class="header__pattern-list-item pattern-list__item">
+                <a class="header__pattern-list-link" href="#">Что входит в&nbsp;Привилегии?</a>
+              </li>
+              <li class="header__pattern-list-item pattern-list__item">
+                <a class="header__pattern-list-link" href="#">Курсы валют</a>
+              </li>
+              <li class="header__pattern-list-item pattern-list__item">
+                <a class="header__pattern-list-link" href="#">Где скачать приложение?</a>
+              </li>
+              <li class="header__pattern-list-item pattern-list__item">
+                <a class="header__pattern-list-link" href="#">Рефинансирование</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
+
+    <!-- For to showing gray background -->
+    <div class="full-overlay"></div>
+
     <main>
-
-
-      <section class="search">
+      <section class="search result">
         <div class="container">
           <div class="breadcrumbs">
             <ul class="breadcrumbs__list">
@@ -73,38 +118,42 @@
           </div>
           <h1 class="search__search-title">Результаты поиска</h1>
           <div class="search__inner">
-            <div class="search__wrapper search__wrapper--empt">
-              <form class="search__search-form" action="#" method="GET">
-                <div class="custom-search custom-search--empt">
+            <div class="search__block block">
+              <form class="search__form form" action="#" method="GET">
+                <div class="custom-search">
                   <input type="search" class="custom-search__field" aria-label="Поле поиска" name="search-field"
                     placeholder="" autocomplete="off">
-                  <svg class="custom-search__icon-close" width="24" height="24" aria-hidden="true">
-                    <use xlink:href="images/sprite.svg#icon-close"></use>
-                  </svg>
-                  <svg class="custom-search__icon-search" width="24" height="24" aria-hidden="true">
-                    <use xlink:href="images/sprite.svg#icon-search"></use>
-                  </svg>
+                  <button class="custom-search__open btn-icon" type="button" aria-label="Открыть поиск">
+                    <svg class="btn-icon__icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-search"></use>
+                    </svg>
+                  </button>
+                  <button class="custom-search__close btn-icon" type="button" aria-label="Очистить">
+                    <svg class="btn-icon__icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-close"></use>
+                    </svg>
+                  </button>
                 </div>
                 <!-- search__button -->
-                <button class="result__search-button btn" type="submit">Найти</button>
+                <button class="search-button btn" type="submit">Найти</button>
               </form>
+              <ul class="search__pattern-list pattern-list">
+                <li class="search__pattern-list-item pattern-list__item">
+                  <a class="search__pattern-list-link" href="#">Что входит в&nbsp;Привилегии?</a>
+                </li>
+                <li class="search__pattern-list-item pattern-list__item">
+                  <a class="search__pattern-list-link" href="#">Курсы валют</a>
+                </li>
+                <li class="search__pattern-list-item pattern-list__item">
+                  <a class="search__pattern-list-link" href="#">Где скачать приложение?</a>
+                </li>
+                <li class="search__pattern-list-item pattern-list__item">
+                  <a class="search__pattern-list-link" href="#">Рефинансирование</a>
+                </li>
+              </ul>
             </div>
 
-            <ul class="search__pattern-list">
-              <li class="search__pattern-list-item">
-                <a class="search__pattern-list-link" href="#">Что входит в&nbsp;Привилегии?</a>
-              </li>
-              <li class="search__pattern-list-item">
-                <a class="search__pattern-list-link" href="#">Курсы валют</a>
-              </li>
-              <li class="search__pattern-list-item">
-                <a class="search__pattern-list-link" href="#">Где скачать приложение?</a>
-              </li>
-              <li class="search__pattern-list-item">
-                <a class="search__pattern-list-link" href="#">Рефинансирование</a>
-              </li>
-            </ul>
-            <div class="search__wrapper search__wrapper--img">
+            <div class="search__wrapper">
               <picture>
                 <source media="(max-width: 360px)" srcset="images/pictures/loupe-mobile.png 1x, 
                     images/pictures/loupe-mobile@2x.png 2x">

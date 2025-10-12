@@ -1,5 +1,5 @@
 .footer {
-  padding:37px 0;
+  padding:40px 0;
   background-color: $color-solitude-2;
 
   @include vp-1024 {
@@ -207,8 +207,8 @@
     }
 
     @include vp-1304 {
-      margin: 10px 0 0;
-      max-width: 400px;
+      // margin: 10px 0 0;
+      max-width: 394px;
     }
   }
 
