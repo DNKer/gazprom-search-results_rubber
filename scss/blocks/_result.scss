@@ -1,6 +1,10 @@
 .result {
   margin: 0;
   padding: 0 0 40px;
+  overflow: hidden;
+  // overflow: hidden; содержимое блочного элемента, выходящее за границы контейнера, 
+  // обрезается по его границам без прокрутки
+
 
   @include vp-1024 {
     padding: 0 0 60px;

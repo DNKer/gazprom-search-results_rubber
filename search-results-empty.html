@@ -67,12 +67,12 @@
               <div class="custom-search">
                 <input type="search" class="custom-search__field" aria-label="Поле поиска" name="search-field"
                   placeholder="" autocomplete="off">
-                <button class="custom-search__open btn-icon" type="button" aria-label="Открыть поиск">
+                <button class="custom-search__open btn-icon" type="submit" aria-label="Открыть поиск">
                   <svg class="btn-icon__icon" width="24" height="24" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-search"></use>
                   </svg>
                 </button>
-                <button class="custom-search__close btn-icon" type="button" aria-label="Очистить">
+                <button class="custom-search__close btn-icon" type="reset" aria-label="Очистить">
                   <svg class="btn-icon__icon" width="24" height="24" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-close"></use>
                   </svg>
@@ -82,17 +82,17 @@
               <button class="search-button btn" type="submit">Найти</button>
             </form>
             <ul class="header__pattern-list pattern-list">
-              <li class="header__pattern-list-item pattern-list__item">
-                <a class="header__pattern-list-link" href="#">Что входит в&nbsp;Привилегии?</a>
+              <li class="pattern-list__item">
+                <a class="pattern-list__link" href="#">Что входит в&nbsp;Привилегии?</a>
               </li>
-              <li class="header__pattern-list-item pattern-list__item">
-                <a class="header__pattern-list-link" href="#">Курсы валют</a>
+              <li class="pattern-list__item">
+                <a class="pattern-list__link" href="#">Курсы валют</a>
               </li>
-              <li class="header__pattern-list-item pattern-list__item">
-                <a class="header__pattern-list-link" href="#">Где скачать приложение?</a>
+              <li class="pattern-list__item">
+                <a class="pattern-list__link" href="#">Где скачать приложение?</a>
               </li>
-              <li class="header__pattern-list-item pattern-list__item">
-                <a class="header__pattern-list-link" href="#">Рефинансирование</a>
+              <li class="pattern-list__item">
+                <a class="pattern-list__link" href="#">Рефинансирование</a>
               </li>
             </ul>
           </div>
@@ -123,14 +123,14 @@
                 <div class="custom-search">
                   <input type="search" class="custom-search__field" aria-label="Поле поиска" name="search-field"
                     placeholder="" autocomplete="off">
-                  <button class="custom-search__open btn-icon" type="button" aria-label="Открыть поиск">
-                    <svg class="btn-icon__icon" width="24" height="24" aria-hidden="true">
-                      <use xlink:href="images/sprite.svg#icon-search"></use>
-                    </svg>
-                  </button>
-                  <button class="custom-search__close btn-icon" type="button" aria-label="Очистить">
+                  <button class="custom-search__close btn-icon" type="reset" aria-label="Очистить">
                     <svg class="btn-icon__icon" width="24" height="24" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-close"></use>
+                    </svg>
+                  </button>
+                  <button class="custom-search__open btn-icon" type="submit" aria-label="Открыть поиск">
+                    <svg class="btn-icon__icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-search"></use>
                     </svg>
                   </button>
                 </div>
@@ -138,17 +138,17 @@
                 <button class="search-button btn" type="submit">Найти</button>
               </form>
               <ul class="search__pattern-list pattern-list">
-                <li class="search__pattern-list-item pattern-list__item">
-                  <a class="search__pattern-list-link" href="#">Что входит в&nbsp;Привилегии?</a>
+                <li class="pattern-list__item">
+                  <a class="pattern-list__link" href="#">Что входит в&nbsp;Привилегии?</a>
                 </li>
-                <li class="search__pattern-list-item pattern-list__item">
-                  <a class="search__pattern-list-link" href="#">Курсы валют</a>
+                <li class="pattern-list__item">
+                  <a class="pattern-list__link" href="#">Курсы валют</a>
                 </li>
-                <li class="search__pattern-list-item pattern-list__item">
-                  <a class="search__pattern-list-link" href="#">Где скачать приложение?</a>
+                <li class="pattern-list__item">
+                  <a class="pattern-list__link" href="#">Где скачать приложение?</a>
                 </li>
-                <li class="search__pattern-list-item pattern-list__item">
-                  <a class="search__pattern-list-link" href="#">Рефинансирование</a>
+                <li class="pattern-list__item">
+                  <a class="pattern-list__link" href="#">Рефинансирование</a>
                 </li>
               </ul>
             </div>
@@ -187,7 +187,7 @@
       <!-- cookie -->
       <div class="fix-block">
         <div class="banner banner--active">
-          <button class="banner__button" aria-label="Оценить" type="button">
+          <button class="banner__button" aria-label="Оценить" type="reset">
             <svg width="24" height="24" aria-hidden="true">
               <use xlink:href="images/sprite.svg#icon-finger_up"></use>
             </svg>
@@ -199,7 +199,7 @@
               пользовательских
               данных.</a> Если вы&nbsp;хотите запретить обработку файлов cookie, отключите cookie в&nbsp;
             настройках вашего браузера</p>
-          <button class="cookie__button" aria-label="Закрыть плашку cookie" type="button">
+          <button class="cookie__button" aria-label="Закрыть плашку cookie" type="reset">
             <svg width="20" height="20" aria-hidden="true">
               <use xlink:href="images/sprite.svg#icon-close"></use>
             </svg>

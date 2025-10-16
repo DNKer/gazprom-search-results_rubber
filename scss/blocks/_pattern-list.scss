@@ -7,11 +7,14 @@
     gap: 8px;
     margin: 0;
 
-    &__item {
+    &__link {
+      display: block;
       padding: 12px 14px;
+      border-radius: 8px;
       font-size: 12px;
       line-height: 14px;
       border-radius: 8px;
+      white-space: nowrap;
       color: $color-black-russian;
       background-color: $color-lavander;
 
@@ -25,9 +28,5 @@
         font-size: 13px;
         line-height: 16px;
       }
-    }
-
-    &__pattern-list-link {
-      white-space: nowrap;
     }
   }

@@ -1046,6 +1046,7 @@ h3 {
 .result {
   margin: 0;
   padding: 0 0 40px;
+  overflow: hidden;
 }
 @media (min-width: 1024px) {
   .result {
@@ -1373,27 +1374,14 @@ h3 {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-rows: repeat(auto-fill, minmax(146px, min-content));
+  display: flex;
+  flex-direction: column;
   gap: 40px;
-}
-@media (min-width: 650px) {
-  .search-result {
-    grid-template-rows: repeat(auto-fill, minmax(90px, min-content));
-  }
-}
-@media (min-width: 768px) {
-  .search-result {
-    grid-template-rows: repeat(auto-fill, minmax(68px, min-content));
-  }
 }
 @media (min-width: 1024px) {
   .search-result {
     gap: 60px;
   }
-}
-.search-result__item > .search-result__heading:hover, .search-result__item > .search-result__heading:focus {
-  color: #476BF0;
 }
 .search-result__item:last-child {
   margin: 0 0 62px;
@@ -1413,19 +1401,29 @@ h3 {
     margin: 0 0 54px;
   }
 }
-.search-result__heading {
-  font-weight: 700;
+.search-result__heading:hover .search-result__title, .search-result__heading:focus .search-result__title {
+  color: #476BF0;
+}
+.search-result__heading:hover .search-result__text, .search-result__heading:focus .search-result__text {
+  color: #1E222E;
+}
+.search-result__title {
+  margin: 0 0 12px;
   font-size: 18px;
   line-height: 22px;
 }
 @media (min-width: 1024px) {
-  .search-result__heading {
+  .search-result__title {
     font-size: 20px;
     line-height: 24px;
   }
 }
+.search-result__title:hover, .search-result__title:focus {
+  color: #476BF0;
+}
 .search-result__text {
-  margin: 12px 0 0;
+  font-weight: 400;
+  margin: 0;
   font-size: 14px;
   line-height: 18px;
 }
@@ -1434,6 +1432,9 @@ h3 {
     font-size: 16px;
     line-height: 22px;
   }
+}
+.search-result__text:hover, .search-result__text:focus {
+  color: #1E222E;
 }
 
 .tags {
@@ -1678,26 +1679,26 @@ h3 {
   gap: 8px;
   margin: 0;
 }
-.pattern-list__item {
+.pattern-list__link {
+  display: block;
   padding: 12px 14px;
+  border-radius: 8px;
   font-size: 12px;
   line-height: 14px;
   border-radius: 8px;
+  white-space: nowrap;
   color: #1E222E;
   background-color: #EDEDEE;
 }
-.pattern-list__item:hover, .pattern-list__item:focus {
+.pattern-list__link:hover, .pattern-list__link:focus {
   background-color: #D2D4DA;
   cursor: pointer;
 }
 @media (min-width: 768px) {
-  .pattern-list__item {
+  .pattern-list__link {
     font-size: 13px;
     line-height: 16px;
   }
-}
-.pattern-list__pattern-list-link {
-  white-space: nowrap;
 }
 
 .full-overlay {
