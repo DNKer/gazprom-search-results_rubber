@@ -26,18 +26,16 @@
     }
   }
 
+  &__heading {
+    outline: none;
 
- &__heading:hover,
- &__heading:focus {
-
-    .search-result__title {
-      color: $color-royal-blue-1;
+    &:hover,
+    &:focus {
+      .search-result__title {
+        color: $color-royal-blue-1;
+      }
     }
-
-    .search-result__text {
-      color: $color-black-russian;
-    }
- }
+  }
 
   &__title {
     margin: 0 0 12px;
@@ -71,5 +69,4 @@
       color: $color-black-russian;
     }
   }
-
 }

@@ -2,9 +2,6 @@
   margin: 0;
   padding: 0 0 40px;
   overflow: hidden;
-  // overflow: hidden; содержимое блочного элемента, выходящее за границы контейнера, 
-  // обрезается по его границам без прокрутки
-
 
   @include vp-1024 {
     padding: 0 0 60px;
@@ -49,19 +46,16 @@
   }
 
   &__block {
-
     @include vp-768 {
       margin: 0 0 60px;
     }
 
     @include vp-1024 {
       margin: 0 0 60px;
-      // margin: 0 0 80px;
     }
   }
 
   &__inner {
-
     @include vp-1024 {
       padding: 0 69px;
     }
@@ -72,7 +66,6 @@
   }
 
   &__block {
-
     @include vp-1024 {
       display: flex;
       gap: 16px;

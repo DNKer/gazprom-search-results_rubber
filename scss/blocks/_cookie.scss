@@ -42,7 +42,6 @@
     }
 
     @include vp-1024 {
-
       font-size: 13px;
       line-height: 16px;
     }
@@ -60,7 +59,7 @@
     background-color: #ffffff;
 
     svg {
-      color: #A3A7BC;
+      color: #a3a7bc;
       width: 48px;
       min-width: 48px;
 
@@ -79,7 +78,7 @@
     color: $color-royal-blue-1;
 
     &:hover {
-      color: rgba(71, 80, 9, 0.70);
+      color: rgba(71, 80, 9, 0.7);
     }
   }
 }

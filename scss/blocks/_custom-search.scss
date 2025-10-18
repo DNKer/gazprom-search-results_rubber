@@ -23,14 +23,14 @@
     color: $color-black;
     font-size: 14px;
     line-height: 18px;
-    outline: none; // убираем черную рамку по умолчанию
+    outline: none;
 
     @include vp-768 {
-      padding: 17px 45px 17px 22px;
+      padding: 17px 85px 17px 22px;
     }
 
     @include vp-1304 {
-      padding: 19px 45px 19px 22px;
+      padding: 19px 90px 19px 22px;
     }
 
     &:hover {
@@ -41,45 +41,16 @@
       border: 1px solid $color-royal-blue-1;
     }
 
-    // &::-webkit-search-cancel-button {
-    //   -webkit-appearance: none;
-    //   width: 24px;
-    //   height: 24px;
-    //   right: 52px;
-    //   transform: translateX(-50%);
-    //   top: 50%;
-    //   background: url('/images/sprite/icon-close.svg');
-    // }
+    &:not(:placeholder-shown) ~ .custom-search__close {
+      display: block;
+    }
   }
-
-  // &__icon-close,
-  // &__icon-search {
-  //   position: absolute;
-  //   top: 50%;
-  //   transform: translateY(-50%);
-  //   color: $color-mischka;
-
-  //   &:focus,
-  //   &:hover {
-  //     color: $color-royal-blue-1;
-  //     cursor: pointer;
-  //   }
-  // }
-
-  // &__icon-close {
-  //   display: none;
-  //   right: 52px;
-  // }
 
   &__open,
   &__close {
     position: absolute;
     top: 14px;
     color: $color-mischka;
-
-    // @include vp-768 {
-    //   right: 20px;
-    // }
   }
 
   &__open {
@@ -91,11 +62,11 @@
   }
 
   &__close {
+    display: none;
     right: 52px;
 
     @include vp-768 {
       right: 62px;
     }
   }
-
 }

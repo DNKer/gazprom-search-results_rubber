@@ -151,11 +151,9 @@
   }
 
   &--search-open {
-
-    +.full-overlay {
+    + .full-overlay {
       visibility: visible;
     }
-
 
     .header__search-open {
       margin: 0;
@@ -186,12 +184,7 @@
       display: none;
     }
 
-    // .custom-search {
-    //   margin: 0 0 20px;
-    // }
-
     .header__pattern-list .header__pattern-list-item {
-      // padding: 12px 14px;
       font-size: 12px;
       line-height: 14px;
 

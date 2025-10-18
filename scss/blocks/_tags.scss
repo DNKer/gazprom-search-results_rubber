@@ -13,32 +13,45 @@
   font-size: 14px;
   line-height: 18px;
 
-  &__item {
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
     padding: 12px;
     border-radius: 8px;
     text-align: center;
     cursor: pointer;
-  }
+    outline: none;
 
-  &__item--disable {
-    background-color: $color-white-smoke;
 
-    .tags__arrow-left {
-      color: $color-dark-gray;
+    &:hover,
+    &:focus {
+      background-color: $color-link-water;
     }
   }
 
-  &__item--arrow {
+  &__link--disable {
+    background-color: $color-white-smoke;
+
+    &:hover,
+    &:focus {
+      background-color: $color-white-smoke;
+    }
+  }
+
+  &__link--disable .tags__arrow {
+    color: $color-dark-gray;
+  }
+
+
+  &__link--arrow {
     background-color: $color-solitude-2;
   }
 
-  &__item--active {
+  &__link--active {
     background-color: $color-black-russian;
-
-    .tags__link {
-      color: $color-white;
-    }
+    color: $color-white;
   }
 }
